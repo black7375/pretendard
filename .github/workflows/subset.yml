@@ -41,6 +41,6 @@ jobs:
     - name: Commit Build File
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        branch: main
+        branch: subset-test
         file_pattern: dist/web/**
         commit_message: 'Fix: Automated commit subset files'
