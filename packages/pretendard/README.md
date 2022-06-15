@@ -33,12 +33,7 @@ CDN을 이용해 Pretendard를 사용할 수 있으며, 토글을 확인해 기�
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard/dist/web/static/pretendard.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard/dist/web/static/pretendard.css" />
 ```
 
 <details>
@@ -48,23 +43,13 @@ CDN을 이용해 Pretendard를 사용할 수 있으며, 토글을 확인해 기�
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard.css" />
 ```
 
 </details>
@@ -102,12 +87,7 @@ Pretendard에서는 웹폰트 용량 문제를 해결하기 위한 방법으로 
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard/dist/web/static/pretendard-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard/dist/web/static/pretendard-dynamic-subset.css" />
 ```
 
 <details>
@@ -117,23 +97,13 @@ Pretendard에서는 웹폰트 용량 문제를 해결하기 위한 방법으로 
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-dynamic-subset.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-dynamic-subset.css" />
 ```
 
 </details>
@@ -171,12 +141,7 @@ Pretendard에서는 웹폰트 용량 문제를 해결하기 위한 방법으로 
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard/dist/web/variable/pretendardvariable.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard/dist/web/variable/pretendardvariable.css" />
 ```
 
 <details>
@@ -186,23 +151,13 @@ Pretendard에서는 웹폰트 용량 문제를 해결하기 위한 방법으로 
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable.css" />
 ```
 
 </details>
@@ -380,6 +335,12 @@ Pretendard에 기여해주셔서 진심으로 감사드립니다.
    </a>
    <a href="https://www.wantedlab.com/#gh-dark-mode-only">
       <img src="https://user-images.githubusercontent.com/7247848/160057796-63bb66b4-efb9-4996-8241-eb2f0a74c8ab.png" align="center" height="50" alt="Wantedlab" hspace="16">
+   </a>
+   <a href="https://www.opencheongwadae.kr/#gh-light-mode-only">
+      <img src="https://user-images.githubusercontent.com/67222970/173811650-144cb28c-b783-4e34-94f9-4d5955839352.png" align="center" height="30" alt="청와대, 국민 품으로" hspace="16">
+   </a>
+   <a href="https://www.opencheongwadae.kr/#gh-dark-mode-only">
+      <img src="https://user-images.githubusercontent.com/67222970/173811541-d70e58d2-3fa8-4afe-b91a-942ce47a8dcf.png" align="center" height="30" alt="청와대, 국민 품으로" hspace="16">
    </a>
 </p>
 
