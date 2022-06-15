@@ -33,12 +33,7 @@ Use the code below to use Pretendard as a web font with entire features. Provide
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/static/pretendard.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/static/pretendard.css" />
 ```
 
 <details>
@@ -48,23 +43,13 @@ Use the code below to use Pretendard as a web font with entire features. Provide
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard.css" />
 ```
 
 </details>
@@ -102,12 +87,7 @@ Pretendard provides the dynamic subset same as Noto Sans Korean from Google Font
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/static/pretendard-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/static/pretendard-dynamic-subset.css" />
 ```
 
 <details>
@@ -117,23 +97,13 @@ Pretendard provides the dynamic subset same as Noto Sans Korean from Google Font
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-dynamic-subset.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-dynamic-subset.css" />
 ```
 
 </details>
@@ -171,12 +141,7 @@ Use the code below to use the variable weight property. Provided font-family nam
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/variable/pretendardvariable.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/variable/pretendardvariable.css" />
 ```
 
 <details>
@@ -186,23 +151,13 @@ Use the code below to use the variable weight property. Provided font-family nam
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable.css" />
 ```
 
 </details>
