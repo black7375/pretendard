@@ -7,7 +7,7 @@ Use the code below to use Pretendard as a webfonts in a Latin environment with l
 #### HTML
 
 ```html
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-std/dist/web/static/pretendard-std.css" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-std.css" />
 ```
 
 <details>
@@ -31,7 +31,7 @@ Use the code below to use Pretendard as a webfonts in a Latin environment with l
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-std/dist/web/static/pretendard-std.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-std.css");
 ```
 
 <details>
@@ -61,7 +61,7 @@ Use the code below to use Pretendard faster by loads the font-slices required fr
 #### HTML
 
 ```html
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-std/dist/web/static/pretendard-std-dynamic-subset.css" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-std-dynamic-subset.css" />
 ```
 
 <details>
@@ -85,7 +85,7 @@ Use the code below to use Pretendard faster by loads the font-slices required fr
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-std/dist/web/static/pretendard-std-dynamic-subset.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-std-dynamic-subset.css");
 ```
 
 <details>
@@ -115,7 +115,7 @@ Use the code below to use the variable weight property. Provided font-family nam
 #### HTML
 
 ```html
-<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-std/dist/web/variable/pretendardvariable-std.css" />
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/variable/pretendardvariable-std.css" />
 ```
 
 <details>
@@ -139,7 +139,7 @@ Use the code below to use the variable weight property. Provided font-family nam
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-std/dist/web/variable/pretendardvariable-std.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/variable/pretendardvariable-std.css");
 ```
 
 <details>
