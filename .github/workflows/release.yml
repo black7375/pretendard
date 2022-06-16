@@ -20,9 +20,8 @@ jobs:
         find -type d -wholename "./packages/**/dist" -exec cp  LICENSE  {}/LICENSE.txt \;
 
         # Publish
+        yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
         yarn workspaces foreach run publish
-      env:
-        NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
     - name: Zip
       run: |
         cd packages
@@ -53,3 +52,4 @@ jobs:
     - name: Purge jsDelivr cache
       run: |
         curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static
+        curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable
