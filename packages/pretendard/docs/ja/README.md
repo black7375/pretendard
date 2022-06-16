@@ -33,12 +33,7 @@ CDN を利用して Pretendard を使用することができ、トグルをチ�
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/static/pretendard.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/dist/web/static/pretendard.css" />
 ```
 
 <details>
@@ -198,17 +193,13 @@ Pretendard は、Web フォントの容量の問題を解決するための方�
 システムにできるだけ合わせたいなら、下記のような font-family 構成をおすすめします。
 
 ```css
-font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
-  Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic",
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", Pretendard, Roboto, "Noto Sans KR", "Segoe UI", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 ```
 
 どこでも同じ環境を持ちたければ下記のような font-family 構成をおすすめします。
 
 ```css
-font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue",
-  "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji",
-  "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 ```
 
 ## パッケージ
@@ -221,7 +212,7 @@ Pretendard は以下のパッケージマネージャで利用できます。
 npm i pretendard
 ```
 
-- [Yarn (recommended)](https://yarnpkg.com/package/pretendard)
+- [Yarn](https://yarnpkg.com/package/pretendard)
 
 ```bash
 yarn add pretendard
