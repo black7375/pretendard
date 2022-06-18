@@ -9,12 +9,7 @@ To use Korea-localized glyphs, add this code to stylesheets: `font-feature-setti
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp.css" />
 ```
 
 <details>
@@ -24,23 +19,13 @@ To use Korea-localized glyphs, add this code to stylesheets: `font-feature-setti
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp.css" />
 ```
 
 </details>
@@ -48,7 +33,7 @@ To use Korea-localized glyphs, add this code to stylesheets: `font-feature-setti
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp.css");
 ```
 
 <details>
@@ -78,12 +63,7 @@ Use the code below to use Pretendard faster by loads the font-slices required fr
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css" />
 ```
 
 <details>
@@ -93,23 +73,13 @@ Use the code below to use Pretendard faster by loads the font-slices required fr
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp-dynamic-subset.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css" />
 ```
 
 </details>
@@ -117,7 +87,7 @@ Use the code below to use Pretendard faster by loads the font-slices required fr
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp-dynamic-subset.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css");
 ```
 
 <details>
@@ -147,12 +117,7 @@ Use the code below to use the variable weight property. Provided font-family nam
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/variable/pretendardvariable-jp.css" />
 ```
 
 <details>
@@ -162,23 +127,13 @@ Use the code below to use the variable weight property. Provided font-family nam
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable-jp.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable-jp.css" />
 ```
 
 </details>
@@ -186,7 +141,7 @@ Use the code below to use the variable weight property. Provided font-family nam
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/variable/pretendardvariable-jp.css");
 ```
 
 <details>
@@ -214,8 +169,5 @@ Use the code below to use the variable weight property. Provided font-family nam
 If you want to provide a comfortable environment anywhere, the following font-family are recommended:
 
 ```css
-font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-  Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo,
-  "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol", sans-serif;
+font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo,   "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 ```

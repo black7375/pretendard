@@ -9,12 +9,7 @@
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp.css" />
 ```
 
 <details>
@@ -24,23 +19,13 @@
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp.css" />
 ```
 
 </details>
@@ -48,7 +33,7 @@
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp.css");
 ```
 
 <details>
@@ -78,12 +63,7 @@
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css" />
 ```
 
 <details>
@@ -93,23 +73,13 @@
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/static/pretendard-jp-dynamic-subset.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css" />
 ```
 
 </details>
@@ -117,7 +87,7 @@
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/static/pretendard-jp-dynamic-subset.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/static/pretendard-jp-dynamic-subset.css");
 ```
 
 <details>
@@ -147,12 +117,7 @@
 #### HTML
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/variable/pretendardvariable-jp.css" />
 ```
 
 <details>
@@ -162,23 +127,13 @@
 ###### cdnjs
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://cdnjs.cloudflare.com/ajax/libs/pretendard/1.3.3/variable/pretendardvariable-jp.css" />
 ```
 
 ###### UNPKG
 
 ```html
-<link
-  rel="stylesheet"
-  as="style"
-  crossorigin
-  href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable-jp.css"
-/>
+<link rel="stylesheet" as="style" crossorigin href="https://unpkg.com/pretendard@1.3.3/dist/web/variable/pretendardvariable-jp.css" />
 ```
 
 </details>
@@ -186,7 +141,7 @@
 #### CSS
 
 ```css
-@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/packages/pretendard-jp/dist/web/variable/pretendardvariable-jp.css");
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.3/dist/web/variable/pretendardvariable-jp.css");
 ```
 
 <details>
@@ -214,8 +169,5 @@
 どこでも快適な環境を提供したい場合は、下記のような font-family 構成をお勧めします。
 
 ```css
-font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui,
-  Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo,
-  "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji",
-  "Segoe UI Symbol", sans-serif;
+font-family: "Pretendard JP", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Hiragino Sans", "Apple SD Gothic Neo", Meiryo, "Noto Sans JP", "Noto Sans KR", "Malgun Gothic", Osaka, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
 ```
