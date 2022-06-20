@@ -2,54 +2,53 @@ name: Release CI
 
 on:
   push:
-    tags:
-      'v*' # push events to matching v*, i.e. v1.0, v20.15.10
+    tags: "v*" # push events to matching v*, i.e. v1.0, v20.15.10
 
 jobs:
   upload:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - name: Set env
-      run: |
-        RELEASE_VERSION=${GITHUB_REF#refs/*/}
-        echo "RELEASE_NAME=${RELEASE_VERSION:1}" >> $GITHUB_ENV
-    - name: Publish to NPM
-      run: |
-        # Copy License
-        find -type d -wholename "./packages/**/dist" -exec cp  LICENSE  {}/LICENSE.txt \;
+      - uses: actions/checkout@v2
+      - name: Set env
+        run: |
+          RELEASE_VERSION=${GITHUB_REF#refs/*/}
+          echo "RELEASE_NAME=${RELEASE_VERSION:1}" >> $GITHUB_ENV
+      - name: Publish to NPM
+        run: |
+          # Copy License
+          find -type d -wholename "./packages/**/fonts" -exec cp  LICENSE  {}/LICENSE.txt \;
 
-        # Publish
-        yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
-        yarn workspaces foreach run publish
-    - name: Zip
-      run: |
-        cd packages
+          # Publish
+          yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
+          yarn workspaces foreach run publish
+      - name: Zip
+        run: |
+          cd packages
 
-        # Remove Dynamic Subset Files
-        find -wholename "**/web/static/*dynamic-subset*" -delete
-        find -wholename "**/web/static/Pretendard*.css"  -delete
+          # Remove Dynamic Subset Files
+          find -wholename "**/web/static/*dynamic-subset*" -delete
+          find -wholename "**/web/static/Pretendard*.css"  -delete
 
-        # Zip
-        (cd pretendard/dist && zip -rv - .) > Pretendard-${{ env.RELEASE_NAME }}.zip
-        (cd pretendard-jp/dist && zip -rv - .) > PretendardJP-${{ env.RELEASE_NAME }}.zip
-        (cd pretendard-std/dist && zip -rv - .) > PretendardStd-${{ env.RELEASE_NAME }}.zip
-    - uses: softprops/action-gh-release@v1 # actions/create-release, actions/upload-release-asset is deprecated
-      if: startsWith(github.ref, 'refs/tags/')
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      with:
-        files: |
-          packages/Pretendard-${{ env.RELEASE_NAME }}.zip
-          packages/PretendardJP-${{ env.RELEASE_NAME }}.zip
-          packages/PretendardStd-${{ env.RELEASE_NAME }}.zip
+          # Zip
+          (cd pretendard/fonts && zip -rv - .) > Pretendard-${{ env.RELEASE_NAME }}.zip
+          (cd pretendard-jp/fonts && zip -rv - .) > PretendardJP-${{ env.RELEASE_NAME }}.zip
+          (cd pretendard-std/fonts && zip -rv - .) > PretendardStd-${{ env.RELEASE_NAME }}.zip
+      - uses: softprops/action-gh-release@v1 # actions/create-release, actions/upload-release-asset is deprecated
+        if: startsWith(github.ref, 'refs/tags/')
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          files: |
+            packages/Pretendard-${{ env.RELEASE_NAME }}.zip
+            packages/PretendardJP-${{ env.RELEASE_NAME }}.zip
+            packages/PretendardStd-${{ env.RELEASE_NAME }}.zip
 
-  cache-invalidation:
-    needs: upload
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Purge jsDelivr cache
-      run: |
-        curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static
-        curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable
+  # cache-invalidation:
+  #   needs: upload
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - name: Purge jsDelivr cache
+  #       run: |
+  #         curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/fonts/web/static
+  #         curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/fonts/web/variable

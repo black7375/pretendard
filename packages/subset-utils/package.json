@@ -13,10 +13,10 @@
     "url": "https://github.com/orioncactus/pretendard/issues"
   },
   "homepage": "https://cactus.tistory.com/306",
-  "main": "dist/index.js",
-  "typings": "dist/index.d.ts",
+  "main": "fonts/index.js",
+  "typings": "fonts/index.d.ts",
   "scripts": {
-    "build": "tsup src/index.ts --dts"
+    "build": "tsup sources/index.ts --dts"
   },
   "dependencies": {
     "font-range": "^0.2.1",
