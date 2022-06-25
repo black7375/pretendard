@@ -17,6 +17,6 @@
     "publish": "yarn npm publish --access public"
   },
   "devDependencies": {
-    "subset-utils": "workspace:^"
+    "@black7375/subset-utils": "workspace:^"
   }
 }

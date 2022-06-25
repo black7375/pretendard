@@ -1,4 +1,4 @@
-const { FONTFAMILY, getFontList, subsets } = require("subset-utils"); 
+const { FONTFAMILY, getFontList, subsets } = require("@black7375/subset-utils");
 
 const fontList = getFontList(FONTFAMILY.PretendardJP);
 subsets(

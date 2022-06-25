@@ -46,6 +46,6 @@ jobs:
     - name: Commit Build File
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        branch: main
+        branch: monorepo-test
         file_pattern: packages/*/dist/web/** examples/**
         commit_message: 'fix: Auto-generate assets'
