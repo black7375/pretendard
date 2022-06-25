@@ -20,7 +20,8 @@ jobs:
         find -type d -wholename "./packages/**/dist" -exec cp  LICENSE  {}/LICENSE.txt \;
 
         # Publish
-        yarn config set npmAuthToken ${{ secrets.NPM_TOKEN }}
+        yarn config set npmPublishRegistry https://npm.pkg.github.com
+        yarn config set npmAuthToken ${{ secrets.GITHUB_TOKEN }}
         yarn workspaces foreach run publish
     - name: Zip
       run: |
@@ -43,13 +44,3 @@ jobs:
           packages/Pretendard-${{ env.RELEASE_NAME }}.zip
           packages/PretendardJP-${{ env.RELEASE_NAME }}.zip
           packages/PretendardStd-${{ env.RELEASE_NAME }}.zip
-
-  cache-invalidation:
-    needs: upload
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v2
-    - name: Purge jsDelivr cache
-      run: |
-        curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static
-        curl https://purge.jsdelivr.net/gh/orioncactus/pretendard/dist/web/variable

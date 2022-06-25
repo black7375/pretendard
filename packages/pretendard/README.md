@@ -1,5 +1,9 @@
 [**한국어**](/packages/pretendard/README.md) | [English](/packages/pretendard/docs/en/README.md) | [日本語](/packages/pretendard/docs/ja/README.md)
 
+This RELEASE is test for workflow.
+
+Don't use this package.
+
 # Pretendard
 
 ![Thumbnail](/thumbnail.svg#gh-light-mode-only)

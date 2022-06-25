@@ -3,7 +3,7 @@ name: Generate Assets
 on:
   push:
     branches:
-      - main
+      - monorepo-test
 
 jobs:
   auto-update:
