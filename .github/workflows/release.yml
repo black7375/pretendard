@@ -10,6 +10,17 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
+    - name: node cache
+      id: node-cache
+      uses: actions/cache@v2
+      with:
+        path: |
+          .yarn/cache
+          **/tsconfig.tsbuildinfo
+        key: ${{ runner.os }}-node-${{ hashFiles('**/yarn.lock') }}
+        restore-keys: |
+          ${{ runner.os }}-node-
+    - run: yarn install --immutable
     - name: Set env
       run: |
         RELEASE_VERSION=${GITHUB_REF#refs/*/}
