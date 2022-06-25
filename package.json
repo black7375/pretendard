@@ -1,8 +1,8 @@
 {
   "name": "@black7375/pretendard-repo",
   "version": "1.3.3",
-  "repository": "https://github.com/orioncactus/pretendard",
-  "author": "Kil Hyung-jin <orioncactus@gmail.com>",
+  "repository": "https://github.com/black7375/pretendard",
+  "author": "black7375 <alstjr7375@daum.net>",
   "license": "OFL-1.1",
   "private": true,
   "workspaces": {

@@ -1,12 +1,12 @@
 {
   "name": "@black7375/subset-utils",
   "version": "1.0.0",
-  "author": "Kil Hyung-jin <orioncactus@gmail.com>",
+  "author": "black7375 <alstjr7375@daum.net>",
   "license": "OFL-1.1",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/orioncactus/pretendard",
+    "url": "https://github.com/black7375/pretendard",
     "directory": "packages/subset-utils"
   },
   "bugs": {
