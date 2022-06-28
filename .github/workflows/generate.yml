@@ -33,6 +33,14 @@ jobs:
           ${{ runner.os }}-node-
     - run: pip install -r ./requirements.txt
     - run: yarn install --immutable
+    - name: Update dist stylesheets
+      run: ./distCSS.sh
+    - name: Commit updated dist stylesheets
+      uses: stefanzweifel/git-auto-commit-action@v4
+      with:
+        branch: monorepo-test
+        file_pattern: dist/*
+        commit_message: 'fix: Update dist stylesheets'
     - name: Build Dependency
       run: |
         yarn workspaces foreach -pt run build
