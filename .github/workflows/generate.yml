@@ -1,9 +1,6 @@
 name: Generate Assets
 
-on:
-  push:
-    branches:
-      - main
+on: [push]
 
 jobs:
   auto-update:
@@ -35,10 +32,10 @@ jobs:
     - run: yarn install --immutable
     - name: Build Dependency
       run: |
-        yarn workspaces foreach -pt run build
+        yarn workspaces foreach -t run build
     - name: Generate webfonts
       run: |
-        yarn workspaces foreach -pt run subset
+        yarn workspaces foreach -t run subset
     - name: Update example assets
       run: |
         cp -f ./packages/pretendard/dist/public/static/Pretendard-*.otf ./examples/flutter_pretendard/fonts
@@ -46,7 +43,7 @@ jobs:
     - name: Commit Build File
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        branch: main
+        branch: subset-gen-test
         file_pattern: packages/*/dist/web/** examples/**
         commit_message: 'fix: Auto-generate assets'
     - name: Update dist stylesheets
@@ -54,6 +51,6 @@ jobs:
     - name: Commit updated dist stylesheets
       uses: stefanzweifel/git-auto-commit-action@v4
       with:
-        branch: main
+        branch: subset-gen-test
         file_pattern: dist/*
         commit_message: 'fix: Update dist stylesheets'
