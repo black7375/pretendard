@@ -1,0 +1,38 @@
+name: "subset and push"
+description: "Subset workspace's font"
+
+inputs:
+  file_pattern:
+    description: "Commit file pattern"
+    require: true
+  message:
+    description: "Commit message"
+    require: true
+  branch:
+    description: "Upload branch"
+    require: true
+
+runs:
+  using: "composite"
+  steps:
+    - name: Commit Build File
+      shell: bash
+      run: |
+        git config user.name "$(git log -n 1 --pretty=format:%an)"
+        git config user.email "$(git log -n 1 --pretty=format:%ae)"
+
+        if [[ "$(git branch -r --contains ${{ inputs.branch }} 2>/dev/null)" ]]; then
+          git checkout ${{ inputs.branch }}
+        else
+          git checkout -b ${{ inputs.branch }}
+        fi
+        git add --ignore-removal ${{ inputs.file_pattern }}
+
+        if [[ "$(git diff --staged)" != "" ]]; then
+          git commit -m "${{ inputs.message }}"
+          if [[ "$(git branch -r --contains ${{ inputs.branch }} 2>/dev/null)" ]]; then
+            git push origin ${{ inputs.branch }}
+          else
+            git push -u origin ${{ inputs.branch }}
+          fi
+        fi

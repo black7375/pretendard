@@ -6,8 +6,8 @@ const variable = getFontList(FONTFAMILY.PretendardJP, { variable: true });
 subsets(
   // Pretendard JP
   ["static",    "woff",  fontList],
-  ["static",    "woff2", fontList],
   ["dynamic",   "woff",  fontList],
+  ["static",    "woff2", fontList],
   ["dynamic",   "woff2", fontList],
   // Pretendard JP Variable
   ["static",    "woff2", variable],
