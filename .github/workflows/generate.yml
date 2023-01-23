@@ -104,10 +104,14 @@ jobs:
     - name: Commit Build File
       shell: bash
       run: |
-        git config user.name "$(git log -n 1 --pretty=format:%an)"
-        git config user.email "$(git log -n 1 --pretty=format:%ae)"
+        # From ../actions/auto-commit
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        LAST_COMMIT_NAME="$(git log -n 1 --pretty=format:%an)"
+        LAST_COMMIT_EMAIL="$(git log -n 1 --pretty=format:%ae)"
+        LAST_COMMIT_AUTHOR="Co-authored-by: ${LAST_COMMIT_NAME} <${LAST_COMMIT_EMAIL}>"
 
-        BRANCHES=("ori-1" "ori-2" "ori-3" "ori-4" "ori-5" "ori-6" "jp-1" "jp-2" "jp-3" "jp-4" "jp-5" "jp-6" "jp-7" "jp-8" "std-")
+        BRANCHES=("ori-1" "ori-2" "ori-3" "ori-4" "ori-5" "ori-6" "jp-1" "jp-2" "jp-3" "jp-4" "jp-5" "jp-6" "jp-7" "jp-8" "std-1")
         for BRANCH in "${BRANCHES[@]}"; do
           if [[ "$(git rev-parse --verify origin/${BRANCH} 2>/dev/null)" ]]; then
             echo "${BRANCH}"
@@ -121,7 +125,7 @@ jobs:
           TWO_LOG="$(git log -2 --pretty=%B)"
           if [[ "$(echo ${TWO_LOG} | head -1)" ==  "$(echo ${TWO_LOG} | tail -1)" ]]; then
             git reset --soft "HEAD~1"
-            git commit --amend -m "${LOG}"
+            git commit --amend -m "${LOG}" -m "${LAST_COMMIT_AUTHOR}"
           fi
         done
 

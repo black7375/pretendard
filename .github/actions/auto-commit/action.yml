@@ -1,5 +1,5 @@
-name: "subset and push"
-description: "Subset workspace's font"
+name: "Auto commit"
+description: "Auto commit & push"
 
 inputs:
   file_pattern:
@@ -18,8 +18,11 @@ runs:
     - name: Commit Build File
       shell: bash
       run: |
-        git config user.name "$(git log -n 1 --pretty=format:%an)"
-        git config user.email "$(git log -n 1 --pretty=format:%ae)"
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        LAST_COMMIT_NAME="$(git log -n 1 --pretty=format:%an)"
+        LAST_COMMIT_EMAIL="$(git log -n 1 --pretty=format:%ae)"
+        LAST_COMMIT_AUTHOR="Co-authored-by: ${LAST_COMMIT_NAME} <${LAST_COMMIT_EMAIL}>"
 
         if [[ "$(git branch -r --contains ${{ inputs.branch }} 2>/dev/null)" ]]; then
           git checkout ${{ inputs.branch }}
@@ -29,7 +32,7 @@ runs:
         git add --ignore-removal ${{ inputs.file_pattern }}
 
         if [[ "$(git diff --staged)" != "" ]]; then
-          git commit -m "${{ inputs.message }}"
+          git commit -m "${{ inputs.message }}" -m "${LAST_COMMIT_AUTHOR}"
           if [[ "$(git branch -r --contains ${{ inputs.branch }} 2>/dev/null)" ]]; then
             git push origin ${{ inputs.branch }}
           else
