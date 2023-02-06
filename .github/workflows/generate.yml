@@ -3,7 +3,7 @@ name: Generate Assets
 on:
   push:
     branches:
-      - main
+      - "*"
 
 jobs:
   pretendard:
@@ -142,4 +142,4 @@ jobs:
       with:
         file_pattern: dist/*
         message: "fix: Update dist stylesheets"
-        branch: main
+        branch: "test/subset-performance"
